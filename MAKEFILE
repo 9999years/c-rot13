@@ -1,0 +1,2 @@
+rot13.exe: rot13.c
+	gcc rot13.c -o rot13.exe
