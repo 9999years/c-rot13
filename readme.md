@@ -32,4 +32,4 @@ $ echo "Hello" | ./rot13
 Uryyb
 ```
 
-Only reads 1024 characters so ¯\\_(ツ)_/¯ if you need more than that. Sorry!
+Only reads 1024 characters so ¯\\\_(ツ)\_/¯ if you need more than that. Sorry!
