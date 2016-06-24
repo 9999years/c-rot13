@@ -41,18 +41,17 @@ int main( int argc, char *argv[] )
 			return 0;
 		}
 
-		int i = strlen( input );
+		//start at the end of the string, -1 for obo error
+		int i = strlen( input ) - 1;
 
 		//go backwards through the string to trim
 		//extra \n's or \r's
-		for( ; i > 0; i-- )
-		{
-			if( input[i] == 0xa //lf
+		while( input[i] == 0xa //lf
 				|| input[i] == 0xd
-			  )
-			{
-				input[i] = 0;
-			}
+			 )
+		{
+			input[i] = 0;
+			i--;
 		}
 		//input now contains the text to be rot'd
 	}
