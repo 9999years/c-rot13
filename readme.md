@@ -17,3 +17,5 @@ Or from the arguments!
 >rot13 Hello
 Uryyb
 ```
+
+Only reads 1024 characters so ¯\_(ツ)_/¯ if you need more than that. Sorry!
