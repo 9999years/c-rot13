@@ -1,4 +1,4 @@
-#rot13 for C
+#rot13 in C
 
 Inspired by the lack of a simple rot13 for Windows and my surplus of free time.
 
