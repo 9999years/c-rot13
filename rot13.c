@@ -40,7 +40,20 @@ int main( int argc, char *argv[] )
 			//something went wrong, get outta here
 			return 0;
 		}
-		input[strlen(input)-2] = 0;
+
+		int i = strlen( input );
+
+		//go backwards through the string to trim
+		//extra \n's or \r's
+		for( ; i > 0; i-- )
+		{
+			if( input[i] == 0xa //lf
+				|| input[i] == 0xd
+			  )
+			{
+				input[i] = 0;
+			}
+		}
 		//input now contains the text to be rot'd
 	}
 	//otherwise...
