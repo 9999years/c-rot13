@@ -2,7 +2,7 @@
 
 Inspired by the lack of a simple rot13 for Windows and my surplus of free time.
 
-Might work on Unix if you fiddle with the Makefile a bit.
+Works on Unix!
 
 Reads from the pipeline
 
@@ -11,10 +11,24 @@ Reads from the pipeline
 Uryyb
 ```
 
+or
+
+```
+$ ./rot13 Hello
+Uryyb
+```
+
 Or from the arguments!
 
 ```
 >rot13 Hello
+Uryyb
+```
+
+or
+
+```
+$ echo "Hello" | ./rot13
 Uryyb
 ```
 

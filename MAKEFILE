@@ -1,2 +1,8 @@
+CC = gcc
+CFLAGS = -Wall
+
 rot13.exe: rot13.c
-	gcc rot13.c -o rot13.exe
+	$(CC) $(CFLAGS) $? -o $@
+
+rot13: rot13.c
+	$(CC) $(CFLAGS) $? -o $@
