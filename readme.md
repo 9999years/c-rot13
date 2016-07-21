@@ -2,34 +2,39 @@
 
 Inspired by the lack of a simple rot13 for Windows and my surplus of free time.
 
-Works on Unix!
+Works on Linux!
 
-Reads from the pipeline
+Compile with `make` or `nmake`.
+
+Reads from the pipeline (stdin)
 
 ```
->echo Hello | rot13
-Uryyb
+>echo The quick brown fox jumps over the lazy dog. | rot13
+
+Gur dhvpx oebja sbk whzcf bire gur ynml qbt.
 ```
 
 or
 
 ```
-$ ./rot13 Hello
-Uryyb
+$ echo "The quick brown fox jumps over the lazy dog." | ./rot13
+Gur dhvpx oebja sbk whzcf bire gur ynml qbt.
 ```
 
 Or from the arguments!
 
 ```
->rot13 Hello
-Uryyb
+>rot13 The quick brown fox jumps over the lazy dog.
+Gur dhvpx oebja sbk whzcf bire gur ynml qbt.
 ```
 
 or
 
 ```
-$ echo "Hello" | ./rot13
-Uryyb
+$ ./rot13 The quick brown fox jumps over the lazy dog.
+Gur dhvpx oebja sbk whzcf bire gur ynml qbt.
 ```
+
+prints help text with `--help`, `-h`, `-?`, `/?`, `/help`, and `/h`. Y’know, for compatability.
 
 Only reads 1024 characters so ¯\\\_(ツ)\_/¯ if you need more than that. Sorry!
